@@ -2,7 +2,7 @@
  * @file    main.c
  * @author  MCU Application Team
  * @author  AssemCorp - Emre Karabek - Field Application Engineer
- * @date    2025-June
+ * @date    2025-November
  * @brief   Main program body
  ******************************************************************************
  * @attention
@@ -305,35 +305,23 @@ static void APP_POR_Sequence(void)
     {
       /* Update multiplexed display frequently */
       Display_Number(por_code);
-      HAL_Delay(10);
-
-      if (Button_Read(GPIOA, GPIO_PIN_1) == 0)
-      {
-        running = TRUE;
-        break;
-      }
+      HAL_Delay(1);
     }
   }
-  else
+  else  // No POR Code = 5
   {
-    /* Fallback simple animation when reset cause not recognized */
-    uint8_t anim = 0;
-    while ((HAL_GetTick() - start) < POR_TIMEOUT_MS)
-    {
-      for (int i = 0; i < 6; ++i)
-      {
-        Display_Number(anim);
-        HAL_Delay(5);
-      }
+      uint32_t display_start = HAL_GetTick();
 
-      anim = (anim + 1) & 0x03; /* 0..3 */
-
-      if (Button_Read(GPIOA, GPIO_PIN_1) == 0)
+      if (por_code == 0)
       {
-        running = TRUE;
-        break;
+        /* Display the code on the units digit while keeping tens blank */
+        while ((HAL_GetTick() - display_start) < POR_TIMEOUT_MS)
+        {
+          /* Update multiplexed display frequently */
+          Display_Number(5);
+          HAL_Delay(1);
+        }
       }
-    }
   }
 
   /* Clear reset flags so next boot will read fresh flags */
@@ -341,6 +329,7 @@ static void APP_POR_Sequence(void)
 
   /* Ensure display cleared for normal operation start */
   Clear_Display();
+  HAL_Delay(500);
 }
 
 /**
