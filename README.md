@@ -11,3 +11,7 @@ Development tips and practical notes
 Board schematics.
 
 Whether you're prototyping or building a production-ready system, these resources are aimed at helping you get the most out of the PY32F030 MCU.
+
+#AssemCorpApplicationTeam
+
+![Hello](F030_Kit_V11.png)
