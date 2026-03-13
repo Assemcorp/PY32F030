@@ -1,0 +1,405 @@
+###############################################################################
+#
+# IAR ELF Linker V9.70.4.588/W64 for ARM                  13/Mar/2026  13:02:46
+# Copyright 2007-2026 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Exe\Project.out
+#    Map file     =
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\List\Project.map
+#    Command line =
+#        -f
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Exe\Project.out.rsp
+#        (C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\User_7280784329937237312.dir\init.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\User_7280784329937237312.dir\main.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_adc.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_comp.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_cordic.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_cortex.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_crc.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_dma.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_exti.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_flash.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_gpio.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_hdiv.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_i2c.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_i2s.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_iwdg.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_lcd.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_lptim.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\User_7280784329937237312.dir\py32f031_hal_msp.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_opa.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_opa_ex.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_pwr.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_rcc.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_rcc_ex.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_rtc.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_rtc_ex.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_spi.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_tim.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_tim_ex.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_uart.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_usart.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_hal_wwdg.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\User_7280784329937237312.dir\py32f031_it.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_adc.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_comp.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_cordic.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_crc.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_dma.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_exti.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_gpio.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_i2c.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_lcd.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_lptim.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_pwr.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_rcc.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_rtc.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_spi.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_tim.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_usart.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir\py32f031_ll_utils.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031xx_Start_Kit_5030248701711525700.dir\py32f031xx_Start_Kit.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\EWARM_7214922893274846302.dir\startup_py32f031xx.o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\CMSIS_6603591812247902717.dir\system_py32f031.o
+#        --no_out_extension -o
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Exe\Project.out
+#        --map
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\List\Project.map
+#        --config
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\py32f031x8_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale
+#        --cpu=Cortex-M0+ --fpu=None) --diagnostics_format=sarif_stdout
+#        --dependencies=n
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Exe\Project.out.iar_deps
+#        --dynamic_output
+#        C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Exe\Project.out.iar_dynout
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 {  ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] {  ro };
+define block CSTACK with size = 512, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+           rw,  block CSTACK,  block HEAP };
+initialize by copy {  rw };
+
+  Section            Kind         Address  Alignment   Size  Object
+  -------            ----         -------  ---------   ----  ------
+"A0":                                                  0xc0
+  .intvec            ro code   0x800'0000          4   0xc0  startup_py32f031xx.o [2]
+                             - 0x800'00c0              0xc0
+
+"P1":                                                 0xf52
+  .text              ro code   0x800'00c0          4  0x798  py32f031_hal_rcc.o [3]
+  .text              ro code   0x800'0858          4    0xc  py32f031_hal.o [3]
+  .text              ro code   0x800'0864          4   0x5c  py32f031_hal.o [3]
+  .text              ro code   0x800'08c0          4   0x34  ABImemcpy.o [7]
+  .text              ro code   0x800'08f4          2   0xae  I32DivModFast.o [7]
+  .text              ro code   0x800'09a2          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'09a4          4   0xe0  py32f031_hal_cortex.o [3]
+  .text              ro code   0x800'0a84          4    0x2  IntDivZer.o [7]
+  .text              ro code   0x800'0a86          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0a88          4  0x1e8  py32f031_hal_gpio.o [3]
+  .text              ro code   0x800'0c70          4   0xae  init.o [5]
+  .text              ro code   0x800'0d1e          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0d20          4   0x4e  ABImemset.o [7]
+  .text              ro code   0x800'0d6e          2    0x2  startup_py32f031xx.o [2]
+  .rodata            const     0x800'0d70          4   0x40  system_py32f031.o [1]
+  .text              ro code   0x800'0db0          4   0x34  py32f031_hal_msp.o [5]
+  .text              ro code   0x800'0de4          4   0x30  system_py32f031.o [1]
+  .text              ro code   0x800'0e14          2   0x30  copy_init3.o [7]
+  .text              ro code   0x800'0e44          4   0x28  py32f031_hal.o [3]
+  .text              ro code   0x800'0e6c          4   0x28  data_init.o [7]
+  .text              ro code   0x800'0e94          2   0x24  main.o [5]
+  .text              ro code   0x800'0eb8          4   0x1c  py32f031_hal.o [3]
+  .text              ro code   0x800'0ed4          4   0x22  cmain.o [7]
+  .text              ro code   0x800'0ef6          2    0x4  low_level_init.o [6]
+  .text              ro code   0x800'0efa          2    0x8  exit.o [6]
+  .text              ro code   0x800'0f02          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0f04          4    0x4  cexit.o [7]
+  .text              ro code   0x800'0f08          4    0xa  cexit_2.o [7]
+  .text              ro code   0x800'0f12          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0f14          4   0x14  exit.o [8]
+  .iar.init_table    const     0x800'0f28          4   0x14  - Linker created -
+  .rodata            const     0x800'0f3c          4   0x20  system_py32f031.o [1]
+  .text              ro code   0x800'0f5c          4   0x1c  cstartup_M.o [7]
+  .text              ro code   0x800'0f78          4   0x18  py32f031_hal.o [3]
+  .rodata            const     0x800'0f90          4   0x14  py32f031_hal_rcc.o [3]
+  .text              ro code   0x800'0fa4          2   0x12  py32f031_it.o [5]
+  .text              ro code   0x800'0fb6          2    0x2  startup_py32f031xx.o [2]
+  .rodata            const     0x800'0fb8          4   0x10  py32f031_hal_rcc.o [3]
+  .text              ro code   0x800'0fc8          4   0x10  startup_py32f031xx.o [2]
+  Initializer bytes  const     0x800'0fd8          4   0x10  <for P2-1>
+  .text              ro code   0x800'0fe8          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0fea          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0fec          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0fee          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0ff0          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0ff2          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0ff4          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0ff6          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0ff8          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0ffa          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0ffc          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'0ffe          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'1000          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'1002          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'1004          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'1006          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'1008          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'100a          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'100c          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'100e          2    0x2  startup_py32f031xx.o [2]
+  .text              ro code   0x800'1010          2    0x2  startup_py32f031xx.o [2]
+  .rodata            const     0x800'1012               0x0  copy_init3.o [7]
+                             - 0x800'1012             0xf52
+
+"P2", part 1 of 2:                                     0x10
+  P2-1                        0x2000'0000          4   0x10  <Init block>
+    .data            inited   0x2000'0000          4    0x4  py32f031_hal.o [3]
+    .data            inited   0x2000'0004          4    0x4  py32f031_hal.o [3]
+    .data            inited   0x2000'0008          4    0x4  system_py32f031.o [1]
+    .bss             inited   0x2000'000c          4    0x4  py32f031_hal.o [3]
+                            - 0x2000'0010              0x10
+
+"P2", part 2 of 2:                                    0x200
+  CSTACK                      0x2000'0010          8  0x200  <Block>
+    CSTACK           uninit   0x2000'0010             0x200  <Block tail>
+                            - 0x2000'0210             0x200
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'1012   0x800'ffff  0xefee
+  0x2000'0210  0x2000'1fff  0x1df0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+           0x800'0fd8  0x10
+    1 destination range, total size 0x10:
+          0x2000'0000  0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+command line/config:
+    ------------------------------------------------
+    Total:
+
+C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\CMSIS_6603591812247902717.dir: [1]
+    system_py32f031.o           48      100        4
+    ------------------------------------------------
+    Total:                      48      100        4
+
+C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\EWARM_7214922893274846302.dir: [2]
+    startup_py32f031xx.o       264
+    ------------------------------------------------
+    Total:                     264
+
+C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir: [3]
+    py32f031_hal.o             196       12       12
+    py32f031_hal_cortex.o      224
+    py32f031_hal_gpio.o        488
+    py32f031_hal_rcc.o       1'944       36
+    ------------------------------------------------
+    Total:                   2'852       48       12
+
+C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031xx_Start_Kit_5030248701711525700.dir: [4]
+    ------------------------------------------------
+    Total:
+
+C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\User_7280784329937237312.dir: [5]
+    init.o                     174
+    main.o                      36
+    py32f031_hal_msp.o          52
+    py32f031_it.o               18
+    ------------------------------------------------
+    Total:                     280
+
+dl6M_tln.a: [6]
+    exit.o                       8
+    low_level_init.o             4
+    ------------------------------------------------
+    Total:                      12
+
+rt6M_tl.a: [7]
+    ABImemcpy.o                 52
+    ABImemset.o                 78
+    I32DivModFast.o            174
+    IntDivZer.o                  2
+    cexit.o                      4
+    cexit_2.o                   10
+    cmain.o                     34
+    copy_init3.o                48
+    cstartup_M.o                28
+    data_init.o                 40
+    ------------------------------------------------
+    Total:                     470
+
+shb_l.a: [8]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Linker created                       20      512
+----------------------------------------------------
+    Grand Total:             3'946      168      528
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'0f28          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0f3c          --   Gb  - Linker created -
+?main                    0x800'0ed5         Code  Gb  cmain.o [7]
+ADC_COMP_IRQHandler      0x800'0ff1         Code  Wk  startup_py32f031xx.o [2]
+AHBPrescTable            0x800'0d70   0x40  Data  Gb  system_py32f031.o [1]
+APP_GpioConfig           0x800'0cd3   0x3c  Code  Gb  init.o [5]
+APP_SystemClockConfig    0x800'0c71   0x62  Code  Gb  init.o [5]
+CORDIC_IRQHandler        0x800'1011         Code  Wk  startup_py32f031xx.o [2]
+CSTACK$$Base            0x2000'0010          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0210          --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                         0x800'0fed         Code  Wk  startup_py32f031xx.o [2]
+DMA1_Channel2_3_IRQHandler
+                         0x800'0fef         Code  Wk  startup_py32f031xx.o [2]
+EXTI0_1_IRQHandler       0x800'0f13         Code  Wk  startup_py32f031xx.o [2]
+EXTI2_3_IRQHandler       0x800'0fb7         Code  Wk  startup_py32f031xx.o [2]
+EXTI4_15_IRQHandler      0x800'0fe9         Code  Wk  startup_py32f031xx.o [2]
+Error_Handler            0x800'0d19    0x6  Code  Gb  init.o [5]
+FLASH_IRQHandler         0x800'0d6f         Code  Wk  startup_py32f031xx.o [2]
+HAL_Delay                0x800'0e45   0x28  Code  Wk  py32f031_hal.o [3]
+HAL_GPIO_Init            0x800'0a89  0x1b4  Code  Gb  py32f031_hal_gpio.o [3]
+HAL_GPIO_TogglePin       0x800'0c4d   0x1a  Code  Gb  py32f031_hal_gpio.o [3]
+HAL_GetTick              0x800'0859    0xc  Code  Wk  py32f031_hal.o [3]
+HAL_IncTick              0x800'0f79   0x18  Code  Wk  py32f031_hal.o [3]
+HAL_Init                 0x800'0eb9   0x1c  Code  Gb  py32f031_hal.o [3]
+HAL_InitTick             0x800'0865   0x5c  Code  Wk  py32f031_hal.o [3]
+HAL_MspInit              0x800'0db1   0x34  Code  Gb  py32f031_hal_msp.o [5]
+HAL_NVIC_SetPriority     0x800'0a5f    0xa  Code  Gb  py32f031_hal_cortex.o [3]
+HAL_RCC_ClockConfig      0x800'0599  0x178  Code  Gb  py32f031_hal_rcc.o [3]
+HAL_RCC_GetSysClockFreq
+                         0x800'073d   0xd2  Code  Gb  py32f031_hal_rcc.o [3]
+HAL_RCC_OscConfig        0x800'00c1  0x4b8  Code  Gb  py32f031_hal_rcc.o [3]
+HAL_SYSTICK_Config       0x800'0a69    0x8  Code  Gb  py32f031_hal_cortex.o [3]
+HSIFreqTable             0x800'0f3c   0x20  Data  Gb  system_py32f031.o [1]
+HardFault_Handler        0x800'0fa7    0x4  Code  Gb  py32f031_it.o [5]
+I2C1_IRQHandler          0x800'1001         Code  Wk  startup_py32f031xx.o [2]
+I2C2_IRQHandler          0x800'1003         Code  Wk  startup_py32f031xx.o [2]
+LCD_IRQHandler           0x800'0feb         Code  Wk  startup_py32f031xx.o [2]
+LPTIM1_IRQHandler        0x800'0ff9         Code  Wk  startup_py32f031xx.o [2]
+NMI_Handler              0x800'0fa5    0x2  Code  Gb  py32f031_it.o [5]
+PVD_IRQHandler           0x800'0a87         Code  Wk  startup_py32f031xx.o [2]
+PendSV_Handler           0x800'0fad    0x2  Code  Gb  py32f031_it.o [5]
+RCC_GetHSIFreq           0x800'0821   0x16  Code  Lc  py32f031_hal_rcc.o [3]
+RCC_IRQHandler           0x800'0f03         Code  Wk  startup_py32f031xx.o [2]
+RTC_IRQHandler           0x800'0d1f         Code  Wk  startup_py32f031xx.o [2]
+Region$$Table$$Base      0x800'0f28          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0f3c          --   Gb  - Linker created -
+Reset_Handler            0x800'0fc9         Code  Wk  startup_py32f031xx.o [2]
+SPI1_IRQHandler          0x800'1005         Code  Wk  startup_py32f031xx.o [2]
+SPI2_IRQHandler          0x800'1007         Code  Wk  startup_py32f031xx.o [2]
+SQRT_IRQHandler          0x800'100f         Code  Wk  startup_py32f031xx.o [2]
+SVC_Handler              0x800'0fab    0x2  Code  Gb  py32f031_it.o [5]
+SysTick_Config           0x800'0a2f   0x30  Code  Lc  py32f031_hal_cortex.o [3]
+SysTick_Handler          0x800'0faf    0x8  Code  Gb  py32f031_it.o [5]
+SystemCoreClock         0x2000'0008    0x4  Data  Gb  system_py32f031.o [1]
+SystemInit               0x800'0de5   0x22  Code  Gb  system_py32f031.o [1]
+TIM14_IRQHandler         0x800'0ffb         Code  Wk  startup_py32f031xx.o [2]
+TIM16_IRQHandler         0x800'0ffd         Code  Wk  startup_py32f031xx.o [2]
+TIM17_IRQHandler         0x800'0fff         Code  Wk  startup_py32f031xx.o [2]
+TIM1_BRK_UP_TRG_COM_IRQHandler
+                         0x800'0ff3         Code  Wk  startup_py32f031xx.o [2]
+TIM1_CC_IRQHandler       0x800'0ff5         Code  Wk  startup_py32f031xx.o [2]
+TIM2_IRQHandler          0x800'0ff7         Code  Wk  startup_py32f031xx.o [2]
+USART1_IRQHandler        0x800'1009         Code  Wk  startup_py32f031xx.o [2]
+USART2_IRQHandler        0x800'100b         Code  Wk  startup_py32f031xx.o [2]
+USART3_IRQHandler        0x800'100d         Code  Wk  startup_py32f031xx.o [2]
+WWDG_IRQHandler          0x800'09a3         Code  Wk  startup_py32f031xx.o [2]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x2000'1fff          --   Gb  <internal module>
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x2000'0000          --   Gb  <internal module>
+__NVIC_SetPriority       0x800'09a5   0x8a  Code  Lc  py32f031_hal_cortex.o [3]
+__aeabi_idiv0            0x800'0a85         Code  Gb  IntDivZer.o [7]
+__aeabi_memcpy4          0x800'08c1         Code  Gb  ABImemcpy.o [7]
+__aeabi_memcpy8          0x800'08c1         Code  Gb  ABImemcpy.o [7]
+__aeabi_memset           0x800'0d21         Code  Gb  ABImemset.o [7]
+__aeabi_uidiv            0x800'08f5         Code  Gb  I32DivModFast.o [7]
+__aeabi_uidivmod         0x800'08f5         Code  Gb  I32DivModFast.o [7]
+__cmain                  0x800'0ed5         Code  Gb  cmain.o [7]
+__exit                   0x800'0f15   0x14  Code  Gb  exit.o [8]
+__iar_Memset4_word       0x800'0d41         Code  Gb  ABImemset.o [7]
+__iar_Memset_word        0x800'0d2d         Code  Gb  ABImemset.o [7]
+__iar_copy_init3         0x800'0e15   0x30  Code  Gb  copy_init3.o [7]
+__iar_data_init3         0x800'0e6d   0x28  Code  Gb  data_init.o [7]
+__iar_program_start      0x800'0f5d         Code  Gb  cstartup_M.o [7]
+__low_level_init         0x800'0ef7    0x4  Code  Gb  low_level_init.o [6]
+__vector_table           0x800'0000         Data  Gb  startup_py32f031xx.o [2]
+_call_main               0x800'0ee1         Code  Gb  cmain.o [7]
+_exit                    0x800'0f05         Code  Gb  cexit.o [7]
+_exit_2                  0x800'0f09         Code  Gb  cexit_2.o [7]
+exit                     0x800'0efb    0x8  Code  Gb  exit.o [6]
+main                     0x800'0e95   0x24  Code  Gb  main.o [5]
+uwTick                  0x2000'000c    0x4  Data  Gb  py32f031_hal.o [3]
+uwTickFreq              0x2000'0004    0x4  Data  Gb  py32f031_hal.o [3]
+uwTickPrio              0x2000'0000    0x4  Data  Gb  py32f031_hal.o [3]
+
+
+[1] = C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\CMSIS_6603591812247902717.dir
+[2] = C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\EWARM_7214922893274846302.dir
+[3] = C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031_HAL_Driver_14009170298480066602.dir
+[4] = C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\PY32F031xx_Start_Kit_5030248701711525700.dir
+[5] = C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Obj\User_7280784329937237312.dir
+[6] = dl6M_tln.a
+[7] = rt6M_tl.a
+[8] = shb_l.a
+
+  3'946 bytes of readonly  code memory
+    168 bytes of readonly  data memory
+    528 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

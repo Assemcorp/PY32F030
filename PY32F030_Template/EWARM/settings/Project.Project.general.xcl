@@ -1,0 +1,13 @@
+C:\iar\ewarm-9.70.4\arm\bin\armproc.dll
+
+ C:\iar\ewarm-9.70.4\arm\bin\armjlink.dll
+
+ C:\Project\PUYA\Firmware\PY32F030\PY32F030_Template\EWARM\Project\Exe\Project.out
+
+ --plugin=C:\iar\ewarm-9.70.4\arm\bin\armLibSupportUniversal.dll
+
+ --flash_loader=C:\iar\ewarm-9.70.4\arm/config/flashloader/Puya/FlashPY32F031x8.board
+
+ 
+
+

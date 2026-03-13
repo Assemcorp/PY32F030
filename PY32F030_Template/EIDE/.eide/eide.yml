@@ -1,0 +1,187 @@
+version: "4.1"
+name: Project
+type: ARM
+deviceName: PY32F031x8
+packDir: .pack/Puya/PY32F0xx_DFP.1.2.0
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: Common
+      files:
+        - path: ../Src/system_py32f031.c
+        - path: startup_py32f031xx.s
+      folders: []
+    - name: Doc
+      files:
+        - path: ../readme.txt
+      folders: []
+    - name: PY32F031_HAL_Driver
+      files:
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_cortex.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_gpio.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_pwr.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_rcc.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_rcc_ex.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_adc.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_comp.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_cordic.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_crc.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_dma.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_exti.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_flash.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_hdiv.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_i2c.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_i2s.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_iwdg.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_lcd.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_lptim.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_opa.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_opa_ex.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_rtc.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_rtc_ex.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_spi.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_tim.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_tim_ex.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_uart.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_usart.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_wwdg.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_adc.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_comp.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_cordic.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_crc.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_dma.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_exti.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_gpio.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_i2c.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_lcd.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_lptim.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_pwr.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_rcc.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_rtc.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_spi.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_tim.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_usart.c
+        - path: ../Drivers/PY32F031_HAL_Driver/Src/py32f031_ll_utils.c
+      folders: []
+    - name: User
+      files:
+        - path: ../Src/main.c
+        - path: ../Src/init.c
+        - path: ../Src/py32f031_hal_msp.c
+        - path: ../Src/py32f031_it.c
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 36bcf0031e18a3008bbdaa90a96a7987
+targets:
+  Project:
+    cppPreprocessAttrs:
+      defineList:
+        - USE_HAL_DRIVER
+        - PY32F031x8
+      incList:
+        - .
+        - ../Inc
+        - ../Drivers/CMSIS/Include
+        - ../Drivers/CMSIS/Device/PY32F031/Include
+        - ../Drivers/PY32F031_HAL_Driver/Inc
+      libList: []
+    excludeList: []
+    toolchain: GCC
+    toolchainConfigMap:
+      AC6:
+        archExtensions: ""
+        cpuType: Cortex-M0+
+        floatingPointHardware: none
+        options:
+          version: 3
+          afterBuildTasks: []
+          asm-compiler:
+            $use: asm-auto
+            misc-controls: ""
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            language-c: c99
+            language-cpp: c++11
+            link-time-optimization: false
+            optimization: level-0
+          global:
+            output-debug-info: enable
+            use-microLIB: false
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            misc-controls: --diag_suppress=L6329
+            output-format: elf
+        scatterFilePath: <YOUR_SCATTER_FILE>.sct
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x5000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x10000"
+                startAddr: "0x08000000"
+              tag: IROM
+        useCustomScatterFile: false
+      GCC:
+        archExtensions: ""
+        cpuType: Cortex-M0+
+        floatingPointHardware: none
+        options:
+          version: 5
+          afterBuildTasks: []
+          asm-compiler:
+            ASM_FLAGS: ""
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: ""
+            C_FLAGS: ""
+            language-c: c11
+            language-cpp: c++11
+            one-elf-section-per-data: true
+            one-elf-section-per-function: true
+            optimization: level-debug
+            warnings: all-warnings
+          global:
+            $float-abi-type: softfp
+            misc-control: --specs=nosys.specs --specs=nano.specs
+            output-debug-info: enable
+          linker:
+            LD_FLAGS: " "
+            LIB_FLAGS: -lm
+            output-format: elf
+            remove-unused-input-sections: true
+        scatterFilePath: py32f031x8.ld
+        storageLayout:
+          RAM: []
+          ROM: []
+        useCustomScatterFile: true
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: PY32F031x8
+          vendor: Puya
+        otherCmds: ""
+        proType: 1
+        speed: 4000
+      OpenOCD:
+        baseAddr: "0x08000000"
+        bin: ""
+        interface: cmsis-dap
+        target: py32f031
+    uploader: JLink
