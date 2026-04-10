@@ -91,6 +91,8 @@ targets:
         - ../Drivers/PY32F031_HAL_Driver/Inc
       libList: []
     excludeList: []
+    settings:
+      debugger: cortex-debug
     toolchain: GCC
     toolchainConfigMap:
       AC6:

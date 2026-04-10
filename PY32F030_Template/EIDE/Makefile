@@ -41,6 +41,7 @@ C_SOURCES =  \
 ../Src/py32f031_hal_msp.c \
 ../Src/py32f031_it.c \
 ../Src/system_py32f031.c \
+../Src/Puya_Lcd/lcd.c \
 ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal.c \
 ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_rcc.c \
 ../Drivers/PY32F031_HAL_Driver/Src/py32f031_hal_rcc_ex.c \
@@ -51,7 +52,7 @@ C_SOURCES =  \
 
 # ASM sources
 ASM_SOURCES =  \
-startup_custom.s  # custom startup used to prevent regeneration issues
+startup_py32f031xx.s
 
 
 #######################################

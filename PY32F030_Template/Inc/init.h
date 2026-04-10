@@ -8,13 +8,65 @@ extern "C" {
 
 #include "main.h"
 
-/* Peripheral handle externs */
-extern TIM_HandleTypeDef htim1;
+/* Configuration Defines -----------------------------------------------------*/
+//#define USE_LCD
+//#define USE_UART
+//#define USE_ADC
+//#define USE_TIMER
+//#define USE_PWM
+#define USE_GPIO
+#define USE_OUTPUT
+//#define USE_INPUT
 
-/* Function prototypes */
-void APP_SystemClockConfig(void);
+/* LCD Pin Configuration */
+#define LCD_RS_PIN          GPIO_PIN_9
+#define LCD_RS_GPIO_PORT    GPIOB
+#define LCD_EN_PIN          GPIO_PIN_8
+#define LCD_EN_GPIO_PORT    GPIOB
+#define LCD_D4_PIN          GPIO_PIN_7
+#define LCD_D4_GPIO_PORT    GPIOB
+#define LCD_D5_PIN          GPIO_PIN_6
+#define LCD_D5_GPIO_PORT    GPIOB
+#define LCD_D6_PIN          GPIO_PIN_5
+#define LCD_D6_GPIO_PORT    GPIOB
+#define LCD_D7_PIN          GPIO_PIN_4
+#define LCD_D7_GPIO_PORT    GPIOB
+
+/* LED Pin Configuration */
+#define LED1_PIN            GPIO_PIN_11
+#define LED1_GPIO_PORT      GPIOB
+#define LED2_PIN            GPIO_PIN_12
+#define LED2_GPIO_PORT      GPIOB
+
+#ifdef LED3_PIN
+#undef LED3_PIN
+#endif
+#define LED3_PIN            GPIO_PIN_13
+
+#ifdef LED3_GPIO_PORT
+#undef LED3_GPIO_PORT
+#endif
+#define LED3_GPIO_PORT      GPIOB
+
+/* Peripheral handle externs */
+extern TIM_HandleTypeDef  htim1;
+extern ADC_HandleTypeDef  hadc;
+extern UART_HandleTypeDef UartHandle;
+
+void APP_ClockConfig(void);
 void APP_GpioConfig(void);
+void APP_LCD_GpioConfig(void);
+void APP_AdcConfig(void);
+void APP_TimerConfig(void);
+void APP_PwmConfig(void);
+void APP_UartConfig(void);
 void Error_Handler(void);
+void APP_GpioConfig_Output(GPIO_TypeDef *port, uint16_t pin);
+void APP_GpioConfig_Input(GPIO_TypeDef *port, uint16_t pin);
+void OUTPUT_TOGGLE(GPIO_TypeDef *port, uint16_t pin);
+void OUTPUT_ON(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
+void OUTPUT_OFF(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
+uint8_t INPUT_READ(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
 
 #ifdef __cplusplus
 }

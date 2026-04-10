@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,PY32F031x8</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Inc;..\Drivers\CMSIS\Include;..\Drivers\CMSIS\Device\PY32F031\Include;..\Drivers\PY32F031_HAL_Driver\Src;..\Drivers\PY32F031_HAL_Driver\Inc</IncludePath>
+              <IncludePath>..\Inc;..\Src\Puya_Lcd;..\Drivers\CMSIS\Include;..\Drivers\CMSIS\Device\PY32F031\Include;..\Drivers\PY32F031_HAL_Driver\Src;..\Drivers\PY32F031_HAL_Driver\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -416,6 +416,16 @@
               <FileName>init.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\init.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\Puya_Lcd\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Src\Puya_Lcd\lcd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1001,7 +1011,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,PY32F031x7</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Inc;..\..\..\Drivers\CMSIS\Include;..\..\..\Drivers\CMSIS\Device\PY32F031\Include;..\..\..\Drivers\PY32F031_HAL_Driver\Inc</IncludePath>
+              <IncludePath>..\Inc;..\Src\Puya_Lcd;..\..\..\Drivers\CMSIS\Include;..\..\..\Drivers\CMSIS\Device\PY32F031\Include;..\..\..\Drivers\PY32F031_HAL_Driver\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1079,6 +1089,16 @@
               <FileName>init.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\init.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\Puya_Lcd\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Src\Puya_Lcd\lcd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1743,6 +1763,16 @@
               <FileType>1</FileType>
               <FilePath>..\Src\init.c</FilePath>
             </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\Puya_Lcd\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Src\Puya_Lcd\lcd.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2405,6 +2435,16 @@
               <FileName>init.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\init.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\Puya_Lcd\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Src\Puya_Lcd\lcd.h</FilePath>
             </File>
           </Files>
         </Group>
